@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Galerie</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Galerie d'images</h1>
+
+    <!-- Première ligne d'images -->
+    <div class="flex-row">
+        <div class="image-block">
+            <img src="{{ url_for('static', filename='images/image1.jpg') }} " alt="Histoire 1">
+            <p>Histoire pour dormir</p>
+        </div>
+        <div class="image-block">
+            <img src="{{ url_for('static', filename='images/image2.jpg') }} "  alt="Histoire 2">
+            <p>Histoire pour se réveiller</p>
+        </div>
+    </div>
+
+    <!-- Deuxième ligne d'images -->
+    <div class="flex-row">
+        <div class="image-block">
+            <img src="{{ url_for('static', filename='images/image3.jpg') }} "  alt="Histoire 3">
+            <p>Histoire pour sortir</p>
+        </div>
+        <div class="image-block">
+            <img src="{{ url_for('static', filename='images/image4.jpg') }} " alt="Histoire 4">
+            <p>Histoire pour manger</p>
+        </div>
+    </div>
+
+    <a href="index.html" class="retour">⬅ Retour à l'accueil</a>
+</body>
+</html>
+

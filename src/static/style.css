@@ -1,0 +1,46 @@
+h1 {
+    color: rgba(64, 162, 223, 0.925);
+    font-size: 40px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+h2 {
+    color: rgb(10, 2, 98);
+    font-size: 20px;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    background-color: #fa96d1e4;
+    text-align: center;
+}
+
+/* VERSION FLEX EN 2 RANGÉES */
+.flex-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.flex-row img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.flex-row img:hover {
+    transform: scale(1.05);
+}
+p {
+    color: rgba(4, 4, 5, 0.925);
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
